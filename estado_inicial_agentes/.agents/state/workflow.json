@@ -1,0 +1,101 @@
+{
+  "schema_version": 4,
+  "version": "lite",
+  "current_step": 1,
+  "execution_status": "NOT_STARTED",
+  "approved_steps": [],
+  "approval_log": [],
+  "policy": "El prompt N aprueba N-1; no editar estados manualmente ni avanzar automáticamente.",
+  "steps": {
+    "01": {
+      "title": "Diagnóstico del dataset",
+      "type": "ANALISIS",
+      "technical_status": "NOT_STARTED",
+      "main_document": "proyecto/02_analisis/02_diagnostico_dataset.md"
+    },
+    "02": {
+      "title": "Decisiones de datos y procesamiento",
+      "type": "DECISION",
+      "technical_status": "NOT_STARTED",
+      "main_document": "proyecto/03_decisiones/01_decisiones_datos.md"
+    },
+    "03": {
+      "title": "Implementación de la depuración",
+      "type": "IMPLEMENTACION",
+      "technical_status": "NOT_STARTED",
+      "main_document": "proyecto/02_analisis/03_analisis_depuracion.md"
+    },
+    "04": {
+      "title": "Decisiones del ETL",
+      "type": "DECISION",
+      "technical_status": "NOT_STARTED",
+      "main_document": "proyecto/03_decisiones/10_decisiones_etl.md"
+    },
+    "05": {
+      "title": "Implementación del ETL",
+      "type": "IMPLEMENTACION",
+      "technical_status": "NOT_STARTED",
+      "main_document": "proyecto/02_analisis/04_analisis_etl.md"
+    },
+    "06": {
+      "title": "Decisiones de enriquecimiento",
+      "type": "DECISION",
+      "technical_status": "NOT_STARTED",
+      "main_document": "proyecto/03_decisiones/04_decisiones_enriquecimiento.md"
+    },
+    "07": {
+      "title": "Implementación del enriquecimiento",
+      "type": "IMPLEMENTACION",
+      "technical_status": "NOT_STARTED",
+      "main_document": "proyecto/02_analisis/05_analisis_enriquecimiento.md"
+    },
+    "08": {
+      "title": "Hallazgos y decisiones de KPI",
+      "type": "DECISION",
+      "technical_status": "NOT_STARTED",
+      "main_document": "proyecto/03_decisiones/05_decisiones_kpi.md"
+    },
+    "09": {
+      "title": "Implementación de indicadores",
+      "type": "IMPLEMENTACION",
+      "technical_status": "NOT_STARTED",
+      "main_document": "proyecto/02_analisis/21_validacion_indicadores.md"
+    },
+    "10": {
+      "title": "Decisiones de dashboards y comunicación",
+      "type": "DECISION",
+      "technical_status": "NOT_STARTED",
+      "main_document": "proyecto/03_decisiones/06_decisiones_dashboards.md"
+    },
+    "11": {
+      "title": "Implementación del dashboard principal",
+      "type": "IMPLEMENTACION",
+      "technical_status": "NOT_STARTED",
+      "main_document": "proyecto/02_analisis/16_validacion_principal.md"
+    },
+    "12": {
+      "title": "Implementación del dashboard temático 1",
+      "type": "IMPLEMENTACION",
+      "technical_status": "NOT_STARTED",
+      "main_document": "proyecto/02_analisis/17_validacion_tematico_1.md"
+    },
+    "13": {
+      "title": "Implementación del dashboard temático 2",
+      "type": "IMPLEMENTACION",
+      "technical_status": "NOT_STARTED",
+      "main_document": "proyecto/02_analisis/18_validacion_tematico_2.md"
+    },
+    "14": {
+      "title": "Implementación del dashboard temático 3",
+      "type": "IMPLEMENTACION",
+      "technical_status": "NOT_STARTED",
+      "main_document": "proyecto/02_analisis/19_validacion_tematico_3.md"
+    },
+    "15": {
+      "title": "Validación y comunicación final",
+      "type": "VALIDACION",
+      "technical_status": "NOT_STARTED",
+      "main_document": "proyecto/02_analisis/10_validacion_final.md"
+    }
+  }
+}

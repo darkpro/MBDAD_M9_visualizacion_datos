@@ -1,0 +1,34 @@
+check,descripcion,esperado,obtenido,ok
+C-01,KPI-01 supervivientes,342,342,True
+C-02,KPI-01 denominador = filas,891,891,True
+C-03,KPI-01 = 100*numerador/denominador,38.38,38.38,True
+C-04,KPI-02 n(female)+n(male),891,891,True
+C-05,KPI-02 female recalculado,74.2,74.2,True
+C-06,KPI-02 brecha = 74.20-18.89,55.31,55.31,True
+C-07,KPI-03 suma de n,891,891,True
+C-08,KPI-03 monotono 1>2>3,True,True,True
+C-09,KPI-03 clase 3 = 119/491,24.24,24.24,True
+C-10,KPI-04 n=1 desde SibSp+Parch+1,537,537,True
+C-11,KPI-04 n=2-4 desde SibSp+Parch+1,292,292,True
+C-12,KPI-04 n=5+ desde SibSp+Parch+1,62,62,True
+C-13,KPI-04 suma de n,891,891,True
+C-14,KPI-05 suma de n,891,891,True
+C-15,KPI-05 Mujer = Miss+Mrs,311,311,True
+C-16,KPI-05 Mujer numerador = 130+100,230,230,True
+C-17,KPI-05 Mr = 81/517,15.67,15.67,True
+C-18,KPI-05 Otros = 8/23,34.78,34.78,True
+C-19,KPI-06 cobertura = 891-687,204,204,True
+C-20,KPI-06 = 100-77.10,22.9,22.9,True
+C-21,KPI-06 consistente con Cabin no nulo,204,204,True
+C-22,KPI-07 base = 204,204,204,True
+C-23,KPI-07 no cubre los 891 (cobertura parcial),True,True,True
+C-24,KPI-07 sin_cabin_ref = 206/687,29.99,29.99,True
+C-25,KPI-07 celdas n<10 marcadas,True,True,True
+C-26,Age nulos sin imputar,177,177,True
+C-27,Cabin nulos sin imputar,687,687,True
+C-28,Embarked nulos sin imputar,2,2,True
+C-29,ningun KPI con denominador 0,True,True,True
+C-30,tasa() con denominador 0 = None,,,True
+C-31,grupo vacio -> sin filas,0,0,True
+C-32,filtro ejemplo (Pclass=1 y female) n,94,94,True
+C-33,filtro ejemplo tasa 91/94 = 96.81,96.81,96.81,True

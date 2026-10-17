@@ -1,0 +1,46 @@
+# Fuentes de skills
+
+Versiones de referencia:
+```json
+{
+  "version": 1,
+  "skills": {
+    "data-quality-frameworks": {
+      "source": "wshobson/agents",
+      "ref": "044b4b21f083948e69ec878a7b07c8d0951a6ffa",
+      "sourceType": "github",
+      "skillPath": "plugins/data-engineering/skills/data-quality-frameworks/SKILL.md",
+      "computedHash": "7ed3e07244c980c858c91906356f8d4bb34058833952d2841db8da881f7ec85b"
+    },
+    "data-storytelling": {
+      "source": "wshobson/agents",
+      "ref": "044b4b21f083948e69ec878a7b07c8d0951a6ffa",
+      "sourceType": "github",
+      "skillPath": "plugins/business-analytics/skills/data-storytelling/SKILL.md",
+      "computedHash": "f015e72bde964f59df0c47b0cc3e713ef9cf0dbeec201e8dd95b472cd8e2e15b"
+    },
+    "exploratory-data-analysis": {
+      "source": "K-Dense-AI/claude-scientific-skills",
+      "ref": "a1043ef544e3a100c28e70a736b6cf32554d0677",
+      "sourceType": "github",
+      "skillPath": "skills/exploratory-data-analysis/SKILL.md",
+      "computedHash": "cd1d46f3cba74653d7415b6c68e9b7d7dd8e0c5d5f8da1dd881337cdb30e4b18"
+    },
+    "kpi-dashboard-design": {
+      "source": "wshobson/agents",
+      "ref": "044b4b21f083948e69ec878a7b07c8d0951a6ffa",
+      "sourceType": "github",
+      "skillPath": "plugins/business-analytics/skills/kpi-dashboard-design/SKILL.md",
+      "computedHash": "237c91f703641b4abd39600062d55de1dbfb1ff6d42608b0ba5bd729aefa6f55"
+    },
+    "polars": {
+      "source": "K-Dense-AI/claude-scientific-skills",
+      "ref": "a1043ef544e3a100c28e70a736b6cf32554d0677",
+      "sourceType": "github",
+      "skillPath": "skills/polars/SKILL.md",
+      "computedHash": "4ab87d6f959e34cd02a129e4c2bdda0b10eadae41804981d9407e83af19242b4"
+    }
+  }
+}
+
+```

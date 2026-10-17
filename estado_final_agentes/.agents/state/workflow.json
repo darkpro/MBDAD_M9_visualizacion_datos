@@ -1,0 +1,322 @@
+{
+  "schema_version": 4,
+  "version": "lite",
+  "current_step": "15",
+  "execution_status": "IN_PROGRESS",
+  "approved_steps": ["07", "08", "09", "10", "11", "12", "13", "14"],
+  "approval_log": [
+    {
+      "step": "06",
+      "version": 1,
+      "prompt_ref": "prompt del paso 07: aprobaba el paso 06 y autorizaba el paso 07",
+      "scope": "ENR-01..ENR-06 y REC-01..REC-05",
+      "sha256": "45B249FEF3C85F9D3F76CE3BD8B8FBCF4E2EFA741DDAF8C1B22D1141E976F4D7",
+      "sha256_note": "Sello de la v1 que se aprobo. El archivo en disco es ahora la v2 (retira ENR-07/ENR-08, corrige Miss 184 -> 185 y la seccion 0), de modo que este hash ya no coincide con ningun archivo: se conserva como historial de la version aprobada.",
+      "partial": true,
+      "withheld": "ENR-07 y ENR-08: no aprobadas; requieren version 2 del paso 06"
+    },
+    {
+      "step": "07",
+      "version": 1,
+      "prompt_ref": "prompt del paso 08: aprobaba el paso 07 y autorizaba el paso 08",
+      "scope": "proyecto/02_analisis/05_analisis_enriquecimiento.md (v1), proyecto/04_codigo/07_enriquecimiento.py, proyecto/01_dataset/Titanic-Dataset_enriquecido.csv (891x18)",
+      "sha256": "C244924FA2DE4E58CF992AE17A5021701BC67F948BF4CD5E95E98A428324FAC4",
+      "sha256_note": "SHA256 de proyecto/02_analisis/05_analisis_enriquecimiento.md tal como queda tras anadirle el bloque APROBACION DE ESTA VERSION (v1); es el sello de la version aprobada, incluida la propia constancia de aprobacion.",
+      "partial": false
+    },
+    {
+      "step": "08",
+      "version": 1,
+      "prompt_ref": "prompt del paso 09: aprobaba el paso 08 y autorizaba el paso 09",
+      "scope": "proyecto/03_decisiones/05_decisiones_kpi.md (v1), proyecto/02_analisis/06_hallazgos_exploratorios.md, proyecto/02_analisis/07_propuesta_kpi.md, proyecto/04_codigo/08_exploratorio.py, filas T08-01..T08-08 de proyecto/03_trazabilidad.csv",
+      "sha256": "E1AF1A77A373229BB3A9F53D93A0E109E724222F10C81149C26F4438A40D854D",
+      "sha256_note": "SHA256 de proyecto/03_decisiones/05_decisiones_kpi.md tal como queda tras anadirle el bloque APROBACION DE ESTA VERSION (v1) y corregir la errata T08-01..T08-07 -> T08-01..T08-08; es el sello de la version aprobada, incluida la propia constancia de aprobacion.",
+      "partial": false
+    },
+    {
+      "step": "09",
+      "version": 1,
+      "prompt_ref": "prompt del paso 10: aprobaba el paso 09 y autorizaba el paso 10",
+      "scope": "proyecto/02_analisis/21_validacion_indicadores.md (v1), proyecto/04_codigo/09_indicadores.py, proyecto/02_analisis/11_indicadores.csv (24 filas), proyecto/02_analisis/12_indicadores_verificaciones.csv (33 checks), filas T09-01..T09-09 de proyecto/03_trazabilidad.csv",
+      "sha256": "BA0D9AE02449B71624C0123FAF2755AE2450174098D2CF2EED87AFDB3198A465",
+      "sha256_note": "SHA256 de proyecto/02_analisis/21_validacion_indicadores.md tal como queda tras anadirle la seccion 8 APROBACION DE ESTA VERSION (v1); es el sello de la version aprobada, incluida la propia constancia de aprobacion. Los hashes citados en esa seccion (EB528800...DC7D66 codigo, 77D7F34E...8724E4 indicadores, B7FE8BD5...AB23B verificaciones) fueron reverificados y coinciden.",
+      "partial": false
+    },
+    {
+      "step": "10",
+      "version": 1,
+      "prompt_ref": "prompt del paso 11: aprobaba el paso 10 y autorizaba el paso 11",
+      "scope": "proyecto/03_decisiones/06_decisiones_dashboards.md (v1, principal, D10-01..D10-08), proyecto/02_analisis/08_propuesta_dashboards.md, proyecto/02_analisis/09_comparacion_tecnologias.md, proyecto/03_decisiones/02_decision_tecnologica.md (v2), proyecto/03_decisiones/07_decisiones_comunicacion.md (D10-C01..D10-C07), filas T10-01..T10-10 de proyecto/03_trazabilidad.csv",
+      "sha256": "B7575413D357B1748038E72113D8C2809634810F60713954BF3BD4F13F8BC84F",
+      "sha256_note": "SHA256 de proyecto/03_decisiones/06_decisiones_dashboards.md tal como queda tras marcarlo APROBADO y anadirle la seccion 6 APROBACION DE ESTA VERSION (v1); es el sello de la version aprobada, incluida la propia constancia de aprobacion.",
+      "partial": false
+    },
+    {
+      "step": "11",
+      "version": 1,
+      "prompt_ref": "prompt del paso 12: aprobaba el paso 11 y autorizaba el paso 12",
+      "scope": "proyecto/02_analisis/16_validacion_principal.md (v1), proyecto/04_codigo/dashboard/datos.js, proyecto/04_codigo/dashboard/app.js, proyecto/04_codigo/dashboard/index.html, proyecto/04_codigo/dashboard/estilos.css, proyecto/04_codigo/dashboard/_check_datos.mjs, filas T11-01..T11-08 de proyecto/03_trazabilidad.csv",
+      "sha256_note": "Este paso no tiene un unico sello de documento porque el paso 12 extendio cinco de sus archivos tras la aprobacion. El documento principal 16_validacion_principal.md se conserva con la tabla de SHAs y el asserts=117 del momento de la aprobacion (historial veraz) mas la nota de que datos.js/app.js/index.html/estilos.css/_check_datos.mjs fueron modificados por el paso 12. Los SHA256 vigentes estan en el documento principal del paso 12 (17_validacion_tematico_1.md): datos.js 2AD3CC0E...91DE02, app.js 5FD1BA6C...B5BA4890, index.html 2630B847...505C0573A, estilos.css FDCE0EF1...1A6703B6, _check_datos.mjs 9219A21D...7C5114FB.",
+      "partial": false
+    },
+    {
+      "step": "12",
+      "version": 1,
+      "prompt_ref": "prompt del paso 13: aprobaba el paso 12 y autorizaba el paso 13",
+      "scope": "proyecto/02_analisis/17_validacion_tematico_1.md (v1), proyecto/04_codigo/dashboard/datos.js, proyecto/04_codigo/dashboard/app.js, proyecto/04_codigo/dashboard/index.html, proyecto/04_codigo/dashboard/estilos.css, proyecto/04_codigo/dashboard/_check_datos.mjs, filas T12-01..T12-06 de proyecto/03_trazabilidad.csv",
+      "sha256": "C5863628BB8161B957403286C3CFEAC663BF51C441846DAC5E3E1E4E632079E1",
+      "sha256_note": "SHA256 de proyecto/02_analisis/17_validacion_tematico_1.md tal como queda tras marcarlo APROBADO (header, seccion 10 Estado y seccion 11 APROBACION DE ESTA VERSION recien anadida); es el sello de la version aprobada, incluida la propia constancia de aprobacion. Ojo: los SHA256 que ese documento cita de datos.js/app.js/index.html/_check_datos.mjs son los de la v1 aprobada y ya no coinciden con disco, porque el paso 13 los extendio; los vigentes estan en el documento principal del paso 13 (18_validacion_tematico_2.md).",
+      "partial": false
+    },
+    {
+      "step": "13",
+      "version": 1,
+      "prompt_ref": "prompt del paso 14: aprobaba el paso 13 y autorizaba el paso 14",
+      "scope": "proyecto/02_analisis/18_validacion_tematico_2.md (v1), proyecto/04_codigo/dashboard/datos.js, proyecto/04_codigo/dashboard/app.js, proyecto/04_codigo/dashboard/index.html, proyecto/04_codigo/dashboard/estilos.css, proyecto/04_codigo/dashboard/_check_datos.mjs, filas T13-01..T13-06 de proyecto/03_trazabilidad.csv",
+      "sha256": "54F9CB4886678DAFE3FF5E703F0707CAC775BDEDA3C7B21CA7362D5C3176381D",
+        "sha256_note": "SHA256 de proyecto/02_analisis/18_validacion_tematico_2.md tal como queda tras marcarlo APROBADO (header, seccion 10 Estado y seccion 11 APROBACION DE ESTA VERSION recien anadida); es el sello de la version aprobada, incluida la propia constancia de aprobacion. Ojo: los SHA256 que ese documento cita de datos.js/app.js/index.html/_check_datos.mjs son los de la v1 aprobada y ya no coinciden con disco, porque el paso 14 los extendio; los vigentes estaran en el documento principal del paso 14 (19_validacion_tematico_3.md).",
+        "partial": false
+      },
+      {
+        "step": "14",
+        "version": 1,
+        "prompt_ref": "prompt del paso 15: aprobaba el paso 14 y autorizaba el paso 15",
+        "scope": "proyecto/02_analisis/19_validacion_tematico_3.md (v1), proyecto/04_codigo/dashboard/datos.js, proyecto/04_codigo/dashboard/app.js, proyecto/04_codigo/dashboard/index.html, proyecto/04_codigo/dashboard/estilos.css, proyecto/04_codigo/dashboard/_check_datos.mjs, filas T14-01..T14-06 de proyecto/03_trazabilidad.csv",
+        "sha256": "262C980D78FE684F52CCB34D558D5B6F09AF7B778002858A811D89BA7C6FBD2C",
+        "sha256_note": "SHA256 de proyecto/02_analisis/19_validacion_tematico_3.md tal como queda tras marcarlo APROBADO (header, seccion 11 Estado y seccion 12 APROBACION DE ESTA VERSION recien anadida); es el sello de la version aprobada, incluida la propia constancia de aprobacion. El documento declara la v1 aprobada con el sello previo 95511336...A7B1400888610B985E47E8877145EEBDD (9830 bytes, el GENERADO que se reviso). Los SHA256 vigentes de datos.js/app.js/index.html/estilos.css/_check_datos.mjs (D685C1F5...A4AF, 0951DACC...B3CE, 46565F6B...63DBE, FDCE0EF1...03B6, 1498402D...18E5A) fueron reverificados antes de registrar la aprobacion y coinciden con disco.",
+        "partial": false
+      }
+    ],
+  "policy": "El prompt N aprueba N-1; no editar estados manualmente ni avanzar automaticamente. approved_steps solo lista aprobaciones limpias; las parciales viven en approval_log con partial=true.",
+  "steps": {
+    "01": {
+      "title": "Diagnóstico del dataset",
+      "type": "ANALISIS",
+      "technical_status": "GENERADO",
+      "main_document": "proyecto/02_analisis/02_diagnostico_dataset.md",
+      "version": 1,
+      "documents": [
+        "proyecto/02_analisis/02_diagnostico_dataset.md",
+        "proyecto/02_analisis/01_contexto_objetivos.md",
+        "proyecto/02_analisis/scripts/01_diagnostico_readonly.py",
+        "proyecto/03_trazabilidad.csv"
+      ]
+    },
+    "02": {
+      "title": "Decisiones de datos y procesamiento",
+      "type": "DECISION",
+      "technical_status": "GENERADO",
+      "main_document": "proyecto/03_decisiones/01_decisiones_datos.md",
+      "version": 1,
+      "documents": [
+        "proyecto/03_decisiones/01_decisiones_datos.md",
+        "proyecto/03_decisiones/02_decision_tecnologica.md",
+        "proyecto/03_trazabilidad.csv"
+      ],
+      "note": "Generado tras autorización explícita del usuario (no es aprobación). No marcado APROBADO."
+    },
+    "03": {
+      "title": "Implementación de la depuración",
+      "type": "IMPLEMENTACION",
+      "technical_status": "GENERADO",
+      "main_document": "proyecto/02_analisis/03_analisis_depuracion.md",
+      "version": 1,
+      "documents": [
+        "proyecto/02_analisis/03_analisis_depuracion.md",
+        "proyecto/04_codigo/03_depuracion.py",
+        "proyecto/01_dataset/Titanic-Dataset_clean.csv",
+        "proyecto/03_trazabilidad.csv"
+      ],
+      "note": "Generado tras autorización explícita del usuario (no es aprobación). El paso 02 sigue GENERADO sin aprobar. No marcado APROBADO."
+    },
+    "04": {
+      "title": "Decisiones del ETL",
+      "type": "DECISION",
+      "technical_status": "GENERADO",
+      "main_document": "proyecto/03_decisiones/10_decisiones_etl.md",
+      "version": 1,
+      "documents": [
+        "proyecto/03_decisiones/10_decisiones_etl.md",
+        "proyecto/03_trazabilidad.csv"
+      ],
+      "note": "Generado tras autorización explícita del usuario (no es aprobación). Sin alternativas abiertas. El análisis 04_analisis_etl.md pasó a ser el documento principal del paso 05. Los pasos 01, 02 y 03 siguen GENERADO sin aprobar. No marcado APROBADO."
+    },
+    "05": {
+      "title": "Implementación del ETL",
+      "type": "IMPLEMENTACION",
+      "technical_status": "GENERADO",
+      "main_document": "proyecto/02_analisis/04_analisis_etl.md",
+      "version": 1,
+      "documents": [
+        "proyecto/02_analisis/04_analisis_etl.md",
+        "proyecto/04_codigo/05_etl.py",
+        "proyecto/01_dataset/Titanic-Dataset_etl.csv",
+        "proyecto/03_trazabilidad.csv"
+      ],
+      "note": "Generado tras autorización explícita del usuario (no es aprobación). ETL ejecutado: 891x12, salida byte-idéntica a la entrada, idempotente. Los pasos 01-04 siguen GENERADO sin aprobar. No marcado APROBADO."
+    },
+    "06": {
+      "title": "Decisiones de enriquecimiento",
+      "type": "DECISION",
+      "technical_status": "GENERADO",
+      "main_document": "proyecto/03_decisiones/04_decisiones_enriquecimiento.md",
+      "version": 2,
+      "documents": [
+        "proyecto/03_decisiones/04_decisiones_enriquecimiento.md",
+        "proyecto/02_analisis/05_analisis_enriquecimiento_paso06.md",
+        "proyecto/03_trazabilidad.csv"
+      ],
+      "note": "VERSION 2 GENERADO (sin aprobacion). La v2 retira ENR-07 y ENR-08 y deja 6 variables coherentes entre las secciones 2 y 4; corrige Miss 184 -> 185 (suma 891) y corrige la seccion 0, que declaraba _etl.csv inexistente cuando el paso 05 ya lo produjo y es byte a byte identico a _clean.csv (CF59B3AB...77F916 en ambos). El analisis secundario 05_analisis_enriquecimiento_paso06.md tambien sube a v2 por las mismas dos correcciones. Se conserva la aprobacion parcial de la v1 (approval_log, 45B249FE...76F4D7) como historial y NO se traslada a la v2. Sin alternativas abiertas.",
+      "blocker": "Ningun bloqueo tecnico. Pendiente: la aprobacion de la v2, que traera el prompt del paso siguiente. Resultados posteriores que necesitan revision: el documento principal del paso 07 (proyecto/02_analisis/05_analisis_enriquecimiento.md) describe ENR-07/ENR-08 como bloqueo pendiente en su encabezado y en su seccion 6; ese bloqueo ya no existe."
+    },
+    "07": {
+      "title": "Implementación del enriquecimiento",
+      "type": "IMPLEMENTACION",
+      "technical_status": "APROBADO",
+      "main_document": "proyecto/02_analisis/05_analisis_enriquecimiento.md",
+      "version": 1,
+      "documents": [
+        "proyecto/02_analisis/05_analisis_enriquecimiento.md",
+        "proyecto/04_codigo/07_enriquecimiento.py",
+        "proyecto/01_dataset/Titanic-Dataset_enriquecido.csv",
+        "proyecto/03_trazabilidad.csv"
+      ],
+      "note": "APROBADO por el prompt del paso 08 (\"Apruebo los resultados, los archivos y las decisiones de la version revisada del PASO 07\"). Cubre el documento principal (v1), el codigo y la salida 891x18 (73674 bytes, SHA256 6807462B8BC25C05DC9DB39BC0DB7ADABC63F964179BF2BB83BE3A1E07129D18). Se anadio el bloque APROBACION DE ESTA VERSION (v1) al documento y se corrigio la seccion 6 para dejar constancia de que la v2 del paso 06 ya no mantiene el bloqueo ENR-07/ENR-08. El paso 06 v2 sigue GENERADO sin aprobar (no lo cubre este prompt).",
+      "blocker": "Sin bloqueo tecnico."
+    },
+    "08": {
+      "title": "Hallazgos y decisiones de KPI",
+      "type": "DECISION",
+      "technical_status": "APROBADO",
+      "main_document": "proyecto/03_decisiones/05_decisiones_kpi.md",
+      "version": 1,
+      "documents": [
+        "proyecto/03_decisiones/05_decisiones_kpi.md",
+        "proyecto/02_analisis/06_hallazgos_exploratorios.md",
+        "proyecto/02_analisis/07_propuesta_kpi.md",
+        "proyecto/04_codigo/08_exploratorio.py",
+        "proyecto/03_trazabilidad.csv"
+      ],
+      "note": "Ejecutado con la autorizacion explicita del prompt del paso 08 (que aprobaba el paso 07). Tres documentos GENERADO v1: 05_decisiones_kpi.md (principal, D08-01..D08-07), 06_hallazgos_exploratorios.md (hallazgos descriptivos sobre la salida 891x18) y 07_propuesta_kpi.md (catalogo de 7 KPI). Script 08_exploratorio.py solo lectura: verifica el SHA de la entrada y reejecuta sin cambios. Se anadieron las filas T08-01..T08-08 a la trazabilidad. Sin metas ni semaforos (D08-06). No se avanzo al paso 09.",
+      "blocker": "Sin bloqueo tecnico. Pendiente: la aprobacion de esta version (v1) y del paso 06 v2, que traera el prompt del paso siguiente. Resultados posteriores que necesitaran revision si cambia el catalogo: el paso 09 (implementacion de indicadores) y el paso 10 (dashboards y comunicacion) dependen de este catalogo."
+    },
+    "09": {
+      "title": "Implementación de indicadores",
+      "type": "IMPLEMENTACION",
+      "technical_status": "APROBADO",
+      "main_document": "proyecto/02_analisis/21_validacion_indicadores.md",
+      "version": 1,
+      "documents": [
+        "proyecto/02_analisis/21_validacion_indicadores.md",
+        "proyecto/04_codigo/09_indicadores.py",
+        "proyecto/02_analisis/11_indicadores.csv",
+        "proyecto/02_analisis/12_indicadores_verificaciones.csv",
+        "proyecto/03_trazabilidad.csv"
+      ],
+      "note": "Ejecutado con la autorizacion explicita del prompt del paso 09 (que aprobaba el paso 08). 7 KPI del catalogo D08-01 implementados en 09_indicadores.py (verifica el SHA de entrada 6807462b...29d18 y aborta si cambia); salida INDICADORES OK | kpi_filas=24 checks=33. Resultados: 11_indicadores.csv (24 filas, SHA256 77d7f34e...8724e4) y 12_indicadores_verificaciones.csv (33 comprobaciones, SHA256 b7fe8bd5...ab23b). Comprobaciones cubren faltantes sin imputar (177/687/2), denominador cero, grupo vacio y filtros de ejemplo. Sin metas ni semaforos. Se anadieron las filas T09-01..T09-09 a la trazabilidad y se normalizaron sus finales de linea a LF (estaba mixta: 23 CRLF + 30 LF). No se construyeron dashboards ni se avanzo al paso 10. APROBADO por el prompt del paso 10: se registro la seccion 8 APROBACION DE ESTA VERSION (v1) en el documento principal (SHA256 BA0D9AE0...3198A465) tras reverificar los tres hashes (codigo, indicadores, verificaciones) y los 33 checks. El paso 06 v2 sigue GENERADO sin aprobar (no lo cubre este prompt).",
+      "blocker": "Sin bloqueo tecnico. Resultados posteriores que necesitaran revision si cambia el catalogo o los calculos: el paso 10 (decisiones de dashboards y comunicacion) y los pasos 11-14 (dashboards D3.js) dependen de estos indicadores."
+    },
+    "10": {
+      "title": "Decisiones de dashboards y comunicación",
+      "type": "DECISION",
+      "technical_status": "APROBADO",
+      "main_document": "proyecto/03_decisiones/06_decisiones_dashboards.md",
+      "version": 1,
+      "documents": [
+        "proyecto/03_decisiones/06_decisiones_dashboards.md",
+        "proyecto/02_analisis/08_propuesta_dashboards.md",
+        "proyecto/02_analisis/09_comparacion_tecnologias.md",
+        "proyecto/03_decisiones/02_decision_tecnologica.md",
+        "proyecto/03_decisiones/07_decisiones_comunicacion.md",
+        "proyecto/03_trazabilidad.csv"
+      ],
+      "note": "Ejecutado con la autorizacion explicita del prompt del paso 10 (que aprobaba el paso 09). Cinco documentos GENERADO v1: 06_decisiones_dashboards.md (principal, D10-01..D10-08), 08_propuesta_dashboards.md (propuesta D1-D4), 09_comparacion_tecnologias.md (D3.js v7 frente a 8 alternativas), 02_decision_tecnologica.md (v2, completa la capa de visualizacion y el enlace datos-front) y 07_decisiones_comunicacion.md (D10-C01..D10-C07). Cuatro dashboards conectados: D1 principal + D2/D3/D4 tematicos. Sin mapas (no hay geografia en el dataset), sin familia real ni clase economica inferida. Solo se decide y documenta: NO se construyo ninguna vista. Se anadieron las filas T10-01..T10-10 a la trazabilidad (73 filas, LF, 10 campos). 11_indicadores.csv queda como baseline de verificacion: sin filtros, las tasas del front deben reproducir el paso 09. No se avanzo al paso 11.",
+      "blocker": "Sin bloqueo tecnico. APROBADO por el prompt del paso 11: se marco APROBADO el documento principal (v1) y se le anadio la seccion 6 APROBACION DE ESTA VERSION (SHA256 B7575413...F8BC84F) tras comprobar que los cinco documentos existen y que las filas T10-01..T10-10 estan presentes (73 filas, LF, 10 campos). El paso 06 v2 sigue GENERADO sin aprobar (no lo cubre este prompt). Resultados posteriores que necesitaran revision si cambia el diseño o los KPI: los pasos 11-14 (dashboards D3.js) implementan D1-D4 y el paso 15 valida la entrega."
+    },
+    "11": {
+      "title": "Implementación del dashboard principal",
+      "type": "IMPLEMENTACION",
+      "technical_status": "APROBADO",
+      "main_document": "proyecto/02_analisis/16_validacion_principal.md",
+      "version": 1,
+      "documents": [
+        "proyecto/02_analisis/16_validacion_principal.md",
+        "proyecto/04_codigo/dashboard/datos.js",
+        "proyecto/04_codigo/dashboard/app.js",
+        "proyecto/04_codigo/dashboard/index.html",
+        "proyecto/04_codigo/dashboard/estilos.css",
+        "proyecto/04_codigo/dashboard/_check_datos.mjs",
+        "proyecto/03_trazabilidad.csv"
+      ],
+      "note": "Ejecutado con la autorizacion explicita del prompt del paso 11 (que aprobaba el paso 10). Vista D1 (principal) y la infraestructura compartida implementadas en cinco archivos: datos.js (carga y agregacion, SHA256 0CB12DAE...C01EED), app.js (filtros, tarjetas, barras D3, tooltip, drilldown, export, SHA256 9502100C...2C9CCA), index.html (nav de 4 pestanas, D3 v7 por CDN, SHA256 D0D688BC...435A96), estilos.css (paleta categorica sin semaforos, SHA256 43F91704...C404C2) y _check_datos.mjs (SHA256 A712B99E...EB2D26). Check runnable: CHECK OK | asserts=117 | kpi_filas=24 | n=891, reproduce el baseline 11_indicadores.csv (77D7F34E...8724E4) sin filtros y valida filtro antes de agregar, estado vacio, bandas de familia, agrupacion de titulos y marca n<10. D2/D3/D4 NO implementados (nav deshabilitada, pendiente pasos 12-14). Se anadieron las filas T11-01..T11-08 (81 filas, LF, 10 campos). No se avanzo al paso 12.",
+      "blocker": "Sin bloqueo tecnico. La capa de dibujo (DOM/D3) se verifica abriendo la pagina, no con test automatizado. Resultados posteriores que necesitaran revision si cambia D1 o la agregacion: los pasos 12-14 reutilizan datos.js y el paso 15 valida la entrega. APROBADO por el prompt del paso 12: se marco APROBADO el documento principal (v1) y se le anadio la seccion 10 APROBACION DE ESTA VERSION. El paso 12 extendio cinco de estos archivos (datos.js, app.js, index.html, estilos.css, _check_datos.mjs); la tabla de SHAs y el asserts=117 del documento se conservan como historial del momento de la aprobacion y los SHA256 vigentes viven en el documento principal del paso 12."
+    },
+    "12": {
+      "title": "Implementación del dashboard temático 1",
+      "type": "IMPLEMENTACION",
+      "technical_status": "APROBADO",
+      "main_document": "proyecto/02_analisis/17_validacion_tematico_1.md",
+      "version": 1,
+      "documents": [
+        "proyecto/02_analisis/17_validacion_tematico_1.md",
+        "proyecto/04_codigo/dashboard/datos.js",
+        "proyecto/04_codigo/dashboard/app.js",
+        "proyecto/04_codigo/dashboard/index.html",
+        "proyecto/04_codigo/dashboard/estilos.css",
+        "proyecto/04_codigo/dashboard/_check_datos.mjs",
+        "proyecto/03_trazabilidad.csv"
+      ],
+      "note": "Ejecutado con la autorizacion explicita del prompt del paso 12 (que aprobaba el paso 11). Vista D2 (sexo x clase) implementada segun D10-01, reutilizando datos.js y el router de app.js. El cruce Sex x Pclass no esta en 11_indicadores.csv, asi que se agrega en cliente: nueva funcion cruce(filas, filtros) en datos.js itera D2.clases x D2.sexos sobre el subconjunto filtrado y devuelve 6 celdas {n, celdas} con la ficha de 7 columnas. app.js anade router hash D1/D2, renderNav (D3/D4 siguen deshabilitadas, pendiente pasos 13-14), renderTarjetas de D2, dibujarD2 (barras agrupadas por clase + matriz Sex x Pclass), drilldown del cruce y scoping de filtros por vista (filtrosDe(vista), D10-02: D2 usa solo Sex/Pclass/Embarked, sin TamanoFamilia) conservando estado.filtros al ir y volver entre vistas (D10-05). Titulo-hallazgo de D2 (D10-C01): de 36.46 a 76.37 pp. Numeros verificados: female/1 91/94=96.81, male/1 45/122=36.89, female/2 70/76=92.11, male/2 17/108=15.74, female/3 72/144=50.00, male/3 47/347=13.54; suma 342/891. Check runnable: CHECK OK | asserts=146 | kpi_filas=24 | n=891 (+29 asserts del cruce, incluida la celda con denominador 0 -> valor_pct=null). SHA256 vigentes: datos.js 2AD3CC0E...91DE02, app.js 5FD1BA6C...B5BA4890, index.html 2630B847...505C0573A, estilos.css FDCE0EF1...1A6703B6, _check_datos.mjs 9219A21D...7C5114FB. Se anadieron las filas T12-01..T12-06 a la trazabilidad (88 lineas, LF). El segundo tematico NO se implemento. No se avanzo al paso 13.",
+      "blocker": "Sin bloqueo tecnico. La capa de dibujo (DOM/D3) se verifica abriendo la pagina, no con test automatizado. Pendiente: la aprobacion de esta version (v1), que traera el prompt del paso 13. Resultados posteriores que necesitaran revision si cambia D2 o el cruce: el paso 13 (tematico 2) reutiliza datos.js y el paso 15 valida la entrega. APROBADO por el prompt del paso 13: se marco APROBADO el documento principal y se le anadio la seccion 11 APROBACION DE ESTA VERSION (SHA256 C5863628...32079E1). El paso 13 extendio cuatro de estos archivos (datos.js, app.js, index.html, _check_datos.mjs); la tabla de SHAs y el asserts=146 del documento se conservan como historial del momento de la aprobacion y los SHA256 vigentes viven en el documento principal del paso 13."
+    },
+    "13": {
+      "title": "Implementación del dashboard temático 2",
+      "type": "IMPLEMENTACION",
+      "technical_status": "APROBADO",
+      "main_document": "proyecto/02_analisis/18_validacion_tematico_2.md",
+      "version": 1,
+      "documents": [
+        "proyecto/02_analisis/18_validacion_tematico_2.md",
+        "proyecto/04_codigo/dashboard/datos.js",
+        "proyecto/04_codigo/dashboard/app.js",
+        "proyecto/04_codigo/dashboard/index.html",
+        "proyecto/04_codigo/dashboard/estilos.css",
+        "proyecto/04_codigo/dashboard/_check_datos.mjs",
+        "proyecto/03_trazabilidad.csv"
+      ],
+      "note": "Ejecutado con la autorizacion explicita del prompt del paso 13 (que aprobaba el paso 12). Vista D3 (familia y titulo) implementada segun D10-01, reutilizando datos.js y el router de app.js. D3 no recalcula indicadores: usa las filas KPI-04 (TamanoFamilia) y KPI-05 (Titulo) que ya produce agregar() con las mismas columnas de 11_indicadores.csv, asi que sin filtros reproduce el paso 09. datos.js anade la constante D3 (kpis/barras KPI-04 y KPI-05, filtros Sex/Pclass/Embarked/TamanoFamilia, titulo-hallazgo) y marca D3 implementada en VISTAS (D4 sigue pendiente). app.js anade la rama D3 de renderTarjetas (Familia 2-4 57.88 169/292, Titulo Mujer 73.95 230/311, brecha por titulo 58.29 pp = Mujer menos Mr, n del filtro vigente), generaliza leyendaD1 -> leyenda(texto) y dibujarBarrasD1 -> dibujarBarras(cont, agg, barras, prefijo, textoLeyenda), y dibuja las dos barras de D3 con numerador/denominador rotulado sobre eje fijo 0-100. Drilldown solo donde hay campo filtrable (KPI-04 -> TamanoFamilia); KPI-05 (Titulo) no tiene campo en CAMPO_DE_KPI, asi que su clic es no-op en vez de inventar un filtro. Filtros por vista y estado conservado al ir y volver entre D1/D2/D3 (D10-05). Numeros verificados sin filtros: KPI-04 1 163/537=30.35, 2-4 169/292=57.88, 5+ 10/62=16.13; KPI-05 Mr 81/517=15.67, Mujer 230/311=73.95, Master 23/40=57.50, Otros 8/23=34.78; suma de denominadores 891 en ambos KPI. Prueba de filtro TamanoFamilia=2-4: n=292, KPI-04 2-4 169/292 y los grupos 1 y 5+ con denominador 0 -> valor_pct nulo (estado vacio D10-04), KPI-05 suma denominadores 292. Check runnable: CHECK OK | asserts=158 | kpi_filas=24 | n=891 (+41 asserts de D3). SHA256 vigentes: datos.js 3DF2B554...14CF69BE, app.js A09F2D06...D189823BA, index.html E12CC61F...130AC62D92, estilos.css FDCE0EF1...1A6703B6 (sin cambios en el paso 13), _check_datos.mjs 057A84B6...23247A4C6. Se anadieron las filas T13-01..T13-06 a la trazabilidad (93 lineas, LF, 10 campos). El tercer tematico (D4, cabina y calidad) NO se implemento: sigue pendiente en VISTAS y el filtro Cubierta sin usar. No se avanzo al paso 14.",
+      "blocker": "Sin bloqueo tecnico. La capa de dibujo (DOM/D3) se verifica abriendo la pagina, no con test automatizado. Pendiente: la aprobacion de esta version (v1), que traera el prompt del paso 14. Resultados posteriores que necesitaran revision si cambia D3 o la agregacion: el paso 14 (D4) reutiliza datos.js y anade KPI-06/KPI-07, y el paso 15 valida la entrega. APROBADO por el prompt del paso 14: se marco APROBADO el documento principal y se le anadio la seccion 11 APROBACION DE ESTA VERSION (SHA256 54F9CB48...56381D). El paso 14 extendio datos.js, app.js, index.html y _check_datos.mjs; la tabla de SHAs y el asserts=158 del documento se conservan como historial del momento de la aprobacion y los SHA256 vigentes viviran en el documento principal del paso 14."
+    },
+    "14": {
+      "title": "Implementación del dashboard temático 3",
+      "type": "IMPLEMENTACION",
+      "technical_status": "APROBADO",
+      "main_document": "proyecto/02_analisis/19_validacion_tematico_3.md",
+      "version": 1,
+      "documents": [
+        "proyecto/02_analisis/19_validacion_tematico_3.md",
+        "proyecto/04_codigo/dashboard/datos.js",
+        "proyecto/04_codigo/dashboard/app.js",
+        "proyecto/04_codigo/dashboard/index.html",
+        "proyecto/04_codigo/dashboard/estilos.css",
+        "proyecto/04_codigo/dashboard/_check_datos.mjs",
+        "proyecto/03_trazabilidad.csv"
+      ],
+      "note": "Ejecutado con la autorizacion explicita del prompt del paso 14 (que aprobaba el paso 13). Vista D4 (cabina y calidad del dato) implementada segun D10-01, reutilizando datos.js y el router de app.js. D4 no recalcula indicadores: usa las filas KPI-06 (cobertura de Cabin) y KPI-07 (tasa por Cubierta) que ya produce agregar(); lo unico propio de D4 son las barras de faltantes (constante FALTANTES y funcion faltantes() en datos.js, que agregan() no genera). datos.js anade la constante D4 (kpis KPI-06/KPI-07, barras KPI-07, filtros Sex/Pclass/Embarked/Cubierta, titulo-hallazgo) y marca D4 implementada en VISTAS. app.js anade VISTA con D4, TITULO_KPI KPI-06/KPI-07, CAMPO_DE_KPI KPI-07=Cubierta, las constantes ACENTO/NEUTROS/GRIS, el componente compartido panelBarras (refactor de dibujarBarras), dibujarD4 (3 paneles: cobertura, KPI-07 y faltantes), el guard de drilldownKpi (solo fija filtro si el grupo es valor valido del campo), las ramas D4 de renderTarjetas/renderGraficos y el estado vacio consciente de vista. Cifras reproducidas de forma independiente contra el dataset: KPI-06 204/891=22.90 (687 sin cabina); KPI-07 base 204 (suma A-T=204): A 7/15=46.67, B 35/47=74.47, C 35/59=59.32, D 25/33=75.76, E 24/32=75.00, F 8/13=61.54, G 2/4=50.00, T 0/1=0.00; sin_cabin_ref 206/687=29.99 como referencia aparte, fuera de la base 204 (D10-07); faltantes BanderaSinAge 177, BanderaSinCabin 687, BanderaSinEmbarked 2. G (n=4) y T (n=1) quedan siempre por debajo de UMBRAL_N=10 (atenuadas + no interpretable) y Cubierta=A mas Clase=3 da n=0 -> estado vacio (A inter Pclass3 = 0). Check runnable: CHECK OK | asserts=211 | kpi_filas=24 | n=891 (+53 asserts de D4). Se corrigio el layout del componente panelBarras (viewBox 460 -> 570, anchoBarra 260) porque 7 etiquetas de D4 desbordaban; el fix toca el componente compartido y por tanto tambien D1-D3, verificando 0 desbordes en las cuatro vistas. Validacion en vivo (HTTP) de las conexiones entre los 4 dashboards: seleccion, filtros, reinicio, recarga/contexto entre vistas (D10-05), drilldown (Cubierta=D -> n=33), export CSV (15 lineas)/SVG y estado vacio. Un falso positivo inicial (doble filtro ignorado) se descarto: era lectura de tarjetas stale del contenedor oculto, no un bug. SHA256 vigentes: datos.js D685C1F5...5768A4AF, app.js 0951DACC...4701B3CE, index.html 46565F6B...166EF63DBE, estilos.css FDCE0EF1...1A6703B6 (sin cambios en el paso 14), _check_datos.mjs 1498402D...5AEC18E5A. Se anadieron las filas T14-01..T14-06 a la trazabilidad (99 lineas, LF, 10 campos). No se preparo la entrega final ni se avanzo al paso 15.",
+      "blocker": "Sin bloqueo tecnico. La capa de dibujo (DOM/D3) se verifica abriendo la pagina, no con test automatizado; el favicon.ico da 404 (cosmetico) y D3.js sigue por CDN (requiere red). Pendiente: nada; la v1 quedo APROBADA por el prompt del paso 15 (registrada en approval_log). Resultados posteriores que necesitaran revision si cambia D4 o la agregacion: el paso 15 (validacion y comunicacion final) valida la entrega completa de los cuatro dashboards."
+    },
+    "15": {
+      "title": "Validación y comunicación final",
+      "type": "VALIDACION",
+      "technical_status": "GENERADO",
+      "main_document": "proyecto/02_analisis/10_validacion_final.md",
+      "version": 1,
+      "documents": [
+        "proyecto/02_analisis/10_validacion_final.md",
+        "proyecto/02_analisis/20_comunicacion_final.md",
+        "proyecto/03_trazabilidad.csv"
+      ],
+      "note": "Ejecutado con la autorizacion explicita del prompt del paso 15 (que aprobaba el paso 14). Validacion de extremo a extremo de la cadena original->depurado->procesado->enriquecido->indicadores->4 dashboards: unidad de analisis 891 filas y 12/12/18 columnas conservadas con SHA256 intactos y reejecucion sin cambios de 03 a 09. Contraste independiente con recuento manual sin pandas: 24/24 filas KPI con mismatches=0; faltantes BanderaSinAge 177 (19.87 %), BanderaSinCabin 687 (77.10 %) y BanderaSinEmbarked 2 (0.22 %); cruce D2 (Sexo x Clase) y cifras de D4 reproducidos; KPI-06 204/891=22.90 y sin_cabin_ref 206/687=29.99 dentro de 11_indicadores.csv. Validacion en vivo (HTTP, D1-D4): titulares que enuncian el hallazgo, eje de tasa fijo 0-100, toda tasa con numerador/denominador, barra atenuada con n<10 (G n=4, T n=1), estado vacio con n=0 (Cubierta=A + Clase=3), persistencia de filtros entre vistas (D10-05, drilldown Cubierta=D vuelve con n=33), export CSV de D4 (15 lineas) y SVG 570x524 con 0 desbordes en las cuatro vistas. Check runnable: CHECK OK | asserts=211 | kpi_filas=24 | n=891. Accesibilidad basica: los cuatro SELECT de filtro llevan label envolvente (asociacion implicita); el navegador avisa de que no tienen id/name/aria-label y el unico error de consola es favicon.ico 404: ambos se registran como limitaciones no bloqueantes, sin REQUIERE_CAMBIOS. Al no existir README ni guia de ejecucion standalone, la guia extremo a extremo (comandos 03 a 09, servidor HTTP y node _check_datos.mjs) se integro en 10_validacion_final.md, y el mensaje de cierre descrito en el README se tomo del de AGENTS.md; la ausencia de README queda registrada como discrepancia/observacion en 10_validacion_final.md. Se anadieron las filas T15-01..T15-07 a la trazabilidad (106 lineas (encabezado + 105 filas), LF, 10 campos, SHA256 E8389D80...0C2ADA). No se publico nada ni se entreno modelo; no se avanzo a ningun paso posterior."
+    }
+  }
+}

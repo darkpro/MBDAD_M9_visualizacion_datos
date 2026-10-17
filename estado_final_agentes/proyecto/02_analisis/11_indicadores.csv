@@ -1,0 +1,25 @@
+KPI,variable,grupo,numerador,denominador,valor_pct,nota
+KPI-01,global,todos,342,891,38.38,linea base
+KPI-02,Sex,female,233,314,74.2,
+KPI-02,Sex,male,109,577,18.89,
+KPI-02,Sex,brecha_female-male,,,55.31,puntos porcentuales
+KPI-03,Pclass,1,136,216,62.96,
+KPI-03,Pclass,2,87,184,47.28,
+KPI-03,Pclass,3,119,491,24.24,
+KPI-04,TamanoFamilia,1,163,537,30.35,
+KPI-04,TamanoFamilia,2-4,169,292,57.88,
+KPI-04,TamanoFamilia,5+,10,62,16.13,
+KPI-05,Titulo,Mr,81,517,15.67,
+KPI-05,Titulo,Mujer,230,311,73.95,
+KPI-05,Titulo,Master,23,40,57.5,
+KPI-05,Titulo,Otros,8,23,34.78,
+KPI-06,Cabin,cobertura,204,891,22.9,1 - mean(BanderaSinCabin)=687 sin dato
+KPI-07,Cubierta,A,7,15,46.67,
+KPI-07,Cubierta,B,35,47,74.47,
+KPI-07,Cubierta,C,35,59,59.32,
+KPI-07,Cubierta,D,25,33,75.76,
+KPI-07,Cubierta,E,24,32,75.0,
+KPI-07,Cubierta,F,8,13,61.54,
+KPI-07,Cubierta,G,2,4,50.0,n<10: no interpretable
+KPI-07,Cubierta,T,0,1,0.0,n<10: no interpretable
+KPI-07,Cubierta,sin_cabin_ref,206,687,29.99,referencia: no entra en la base 204

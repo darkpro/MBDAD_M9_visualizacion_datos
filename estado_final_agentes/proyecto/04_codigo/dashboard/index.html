@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard de supervivencia (pasos 11-14)</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header>
+    <h1>Supervivencia en el Titanic</h1>
+    <p class="subtitulo">Pasos 11-14: dashboard principal (D1), tematicos sexo × clase (D2), familia y titulo (D3) y cabina y calidad (D4). Datos e indicadores del paso 09.</p>
+  </header>
+
+  <nav id="nav" aria-label="Vistas del dashboard"></nav>
+
+  <h2 id="titulo-vista"></h2>
+
+  <aside id="filtros" aria-label="Filtros compartidos"></aside>
+
+  <p id="error" class="aviso" role="alert" hidden></p>
+  <p id="vacio" class="aviso" hidden></p>
+
+  <main id="principal">
+    <section id="tarjetas" class="tarjetas" aria-label="Indicadores clave"></section>
+    <section class="acciones">
+      <button id="btn-csv" type="button">Exportar CSV agregado</button>
+      <button id="btn-svg" type="button">Exportar SVG de la vista</button>
+    </section>
+    <div id="graficos"></div>
+  </main>
+
+  <footer>
+    <p>Referencia: <code>proyecto/02_analisis/11_indicadores.csv</code>. D3 (familia y titulo) usa KPI-04 y KPI-05, y D4 (cabina y calidad) usa KPI-06 y KPI-07 del paso 09; el cruce sexo × clase de D2 y los faltantes de D4 se agregan en <code>datos.js</code> (no están en el CSV). Sin filtros las cifras reproducen el paso 09.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
